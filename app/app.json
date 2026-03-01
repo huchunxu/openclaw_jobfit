@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/conversation/index",
+    "pages/match/index",
+    "pages/resumes/index",
+    "pages/applications/index",
+    "pages/profile/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "JobFit",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1890ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-active.png"
+      },
+      {
+        "pagePath": "pages/resumes/index",
+        "text": "简历",
+        "iconPath": "assets/resume.png",
+        "selectedIconPath": "assets/resume-active.png"
+      },
+      {
+        "pagePath": "pages/applications/index",
+        "text": "投递",
+        "iconPath": "assets/apply.png",
+        "selectedIconPath": "assets/apply-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/user.png",
+        "selectedIconPath": "assets/user-active.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
