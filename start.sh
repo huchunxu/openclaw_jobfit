@@ -67,7 +67,7 @@ install_deps() {
     if command -v python3 &> /dev/null; then
         print_msg "安装后端依赖..."
         cd "$PROJECT_ROOT/backend"
-        pip install -r requirements.txt
+        pip3 install -r requirements.txt
     else
         print_warn "Python 未安装，跳过后端依赖"
     fi

@@ -76,7 +76,7 @@ source venv/bin/activate  # Linux/Mac
 # 或 venv\Scripts\activate  # Windows
 
 # 安装依赖
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # 启动服务（默认端口8000）
 python -m uvicorn api.main:app --reload --port 8000

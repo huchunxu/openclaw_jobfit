@@ -47,7 +47,7 @@ echo [JobFit] 安装依赖...
 echo.
 echo [JobFit] 安装后端依赖...
 cd /d "%PROJECT_ROOT%backend"
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 if errorlevel 1 (
     echo [Error] 后端依赖安装失败
     goto :eof
