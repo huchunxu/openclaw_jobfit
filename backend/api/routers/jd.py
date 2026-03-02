@@ -53,7 +53,7 @@ async def parse_jd(jd_input: JDInput):
     """
     解析JD文本
     """
-    from backend.services.jd_service import JDParser
+    from .services.jd_service import JDParser
     
     parser = JDParser()
     
@@ -61,11 +61,11 @@ async def parse_jd(jd_input: JDInput):
     if jd_input.input_type == "text":
         result = parser.parse(jd_input.content, jd_input.platform)
     elif jd_input.input_type == "url":
-        from backend.services.jd_service import parse_jd_from_url
+        from .services.jd_service import parse_jd_from_url
         jd_text = parse_jd_from_url(jd_input.content)
         result = parser.parse(jd_text, jd_input.platform)
     elif jd_input.input_type == "file":
-        from backend.services.jd_service import parse_jd_from_file
+        from .services.jd_service import parse_jd_from_file
         jd_text = parse_jd_from_file(jd_input.content, "txt")
         result = parser.parse(jd_text, jd_input.platform)
     else:

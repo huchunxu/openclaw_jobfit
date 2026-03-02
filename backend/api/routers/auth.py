@@ -88,7 +88,7 @@ async def login_with_code(request: LoginRequest):
         raise HTTPException(status_code=400, detail="验证码错误")
     
     # 验证通过，生成Token
-    from backend.services.auth_service import AuthService
+    from .services.auth_service import AuthService
     
     # 模拟用户ID（实际应查询数据库）
     user_id = hash(request.phone) % 1000000
@@ -114,7 +114,7 @@ async def login_with_password(request: LoginWithPasswordRequest):
         raise HTTPException(status_code=400, detail="请提供手机号或邮箱")
     
     # TODO: 查询数据库验证密码
-    from backend.services.auth_service import AuthService
+    from .services.auth_service import AuthService
     
     # 模拟用户ID
     user_id = 1

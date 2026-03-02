@@ -35,7 +35,7 @@ async def generate_resume(user_id: int, request: GenerateResumeRequest):
     """
     生成简历
     """
-    from backend.services.resume_service import ResumeGenerator
+    from .services.resume_service import ResumeGenerator
     
     # 模拟用户档案（实际应从数据库查询）
     user_profile = {

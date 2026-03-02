@@ -46,7 +46,7 @@ async def calculate_match(request: MatchRequest):
     """
     计算人岗匹配度
     """
-    from backend.services.match_service import MatchEngine
+    from .services.match_service import MatchEngine
     
     # 模拟用户档案（实际应从数据库查询）
     user_profile = {

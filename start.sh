@@ -94,9 +94,9 @@ start_backend() {
         print_warn "建议创建虚拟环境: python3 -m venv venv"
     fi
     
-    # 启动后端（切换到backend目录并设置PYTHONPATH）
+    # 启动后端（直接在backend目录运行）
     cd "$PROJECT_ROOT/backend"
-    PYTHONPATH="$PROJECT_ROOT" python3 -m uvicorn api.main:app --reload --port 8000 &
+    python3 -m uvicorn api.main:app --reload --port 8000 &
     BACKEND_PID=$!
     
     print_msg "后端服务已启动 (PID: $BACKEND_PID)"

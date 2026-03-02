@@ -8,8 +8,12 @@ from typing import Optional, List
 from datetime import date
 from enum import Enum
 
-# 导入路由（使用相对导入）
-from backend.api.routers import auth, jd, match, resume, profile, application
+# 导入路由（直接导入）
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from api.routers import auth, jd, match, resume, profile, application
 
 app = FastAPI(title="JobFit API", version="1.0.0")
 
