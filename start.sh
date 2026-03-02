@@ -95,7 +95,7 @@ start_backend() {
     fi
     
     # 启动后端
-    python -m uvicorn api.main:app --reload --port 8000 &
+    python3 -m uvicorn api.main:app --reload --port 8000 &
     BACKEND_PID=$!
     
     print_msg "后端服务已启动 (PID: $BACKEND_PID)"
