@@ -9,7 +9,7 @@ from datetime import date
 from enum import Enum
 
 # 导入路由
-from backend.api.routers import auth, jd, match, resume
+from backend.api.routers import auth, jd, match, resume, profile, application
 
 app = FastAPI(title="JobFit API", version="1.0.0")
 
@@ -18,6 +18,8 @@ app.include_router(auth.router)
 app.include_router(jd.router)
 app.include_router(match.router)
 app.include_router(resume.router)
+app.include_router(profile.router)
+app.include_router(application.router)
 
 # CORS 配置
 app.add_middleware(
