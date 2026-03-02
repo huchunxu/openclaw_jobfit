@@ -34,7 +34,7 @@ export default function Dashboard() {
 
       <div className="container mx-auto px-4 py-6">
         {/* 快捷操作 */}
-        <div className="grid md:grid-cols-4 gap-4 mb-8">
+        <div className="grid md:grid-cols-6 gap-4 mb-8">
           <Link href="/jd/upload">
             <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
               <div className="text-3xl mb-2">📋</div>
@@ -42,11 +42,39 @@ export default function Dashboard() {
               <p className="text-sm text-gray-500">解析招聘需求</p>
             </motion.div>
           </Link>
+          <Link href="/collect">
+            <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
+              <div className="text-3xl mb-2">💬</div>
+              <h3 className="font-semibold">信息采集</h3>
+              <p className="text-sm text-gray-500">对话完善档案</p>
+            </motion.div>
+          </Link>
           <Link href="/match">
             <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
               <div className="text-3xl mb-2">🎯</div>
               <h3 className="font-semibold">岗位匹配</h3>
               <p className="text-sm text-gray-500">计算匹配度</p>
+            </motion.div>
+          </Link>
+          <Link href="/applications">
+            <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
+              <div className="text-3xl mb-2">📨</div>
+              <h3 className="font-semibold">投递管理</h3>
+              <p className="text-sm text-gray-500">追踪求职进度</p>
+            </motion.div>
+          </Link>
+          <Link href="/stats">
+            <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
+              <div className="text-3xl mb-2">📊</div>
+              <h3 className="font-semibold">数据分析</h3>
+              <p className="text-sm text-gray-500">求职统计分析</p>
+            </motion.div>
+          </Link>
+          <Link href="/settings">
+            <motion.div whileHover={{ scale: 1.02 }} className="card cursor-pointer hover:shadow-md">
+              <div className="text-3xl mb-2">⚙️</div>
+              <h3 className="font-semibold">设置</h3>
+              <p className="text-sm text-gray-500">通知与隐私</p>
             </motion.div>
           </Link>
           <Link href="/resume/generate">
