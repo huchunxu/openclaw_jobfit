@@ -28,6 +28,7 @@ export default function Home() {
         <nav className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-indigo-600">JobFit</h1>
           <div className="flex gap-4">
+            <Link href="/dashboard" className="text-gray-600 hover:text-gray-900">直接测试</Link>
             <Link href="/login" className="text-gray-600 hover:text-gray-900">登录</Link>
             <Link href="/register" className="text-indigo-600 hover:text-indigo-700">注册</Link>
           </div>
