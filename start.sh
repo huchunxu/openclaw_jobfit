@@ -91,7 +91,7 @@ start_backend() {
     
     # 检查依赖
     if [ ! -d "venv" ] && [ -f "requirements.txt" ]; then
-        print_warn "建议创建虚拟环境: python -m venv venv"
+        print_warn "建议创建虚拟环境: python3 -m venv venv"
     fi
     
     # 启动后端
